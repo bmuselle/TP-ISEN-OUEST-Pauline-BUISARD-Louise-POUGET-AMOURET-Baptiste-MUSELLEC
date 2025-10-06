@@ -226,6 +226,24 @@ html {
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-links-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-cities {
+    text-align: left;
+    font-size: 18px;
+  }
+}
+
     </style>
 </head>
 <body>
@@ -278,20 +296,50 @@ html {
     <div class="footer-col footer-col-logo">
       <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" 
            alt="ISEN Ouest" class="footer-logo">
+      <a href="https://bmuselle.github.io/TP-ISEN-OUEST-Pauline-BUISARD-Louise-POUGET-AMOURET-Baptiste-MUSELLEC/contact.html" class="btn-contact">Nous contacter</a>
     </div>
 
     <!-- Zone titres + colonnes 2-4 -->
     <div class="footer-links-section">
       <!-- Titre général -->
-      <p class="footer-cities">Texte à venir</p>
+      <p class="footer-cities">Brest - Caen - Nantes - Paris - Rennes</p>
 
+      <!-- Colonnes de liens -->
+      <div class="footer-links-container">
+        <!-- Colonne 2 : Devenir ingénieur -->
+        <div class="footer-col">
+          <h3>Devenir ingénieur</h3>
+          <ul>
+            <li><a href="https://bmuselle.github.io/TP-ISEN-OUEST-Pauline-BUISARD-Louise-POUGET-AMOURET-Baptiste-MUSELLEC/postbac.html">Cycle post-bac</a></li>
+            <li><a href="https://bmuselle.github.io/TP-ISEN-OUEST-Pauline-BUISARD-Louise-POUGET-AMOURET-Baptiste-MUSELLEC/devenir_inge.html">Formation d'ingénieur</a></li>
+            <li><a href="https://bmuselle.github.io/TP-ISEN-OUEST-Pauline-BUISARD-Louise-POUGET-AMOURET-Baptiste-MUSELLEC/apprentissage.html">Apprentissage</a></li>
+          </ul>
+        </div>
 
+        <!-- Colonne 3 : Entreprises -->
+        <div class="footer-col">
+          <h3>Entreprises</h3>
+          <ul>
+            <li><a href="https://isen-ouest.fr/entreprises/recruter/">Recruter un étudiant</a></li>
+            <li><a href="https://isen-ouest.fr/labisen-la-recherche/la-recherche-partenariale/">Recherche partenariale</a></li>
+            <li><a href="http://isen-ouest.fr/taxe-d-apprentissage">Taxe d'apprentissage</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 4 : Étudiants -->
+        <div class="footer-col">
+          <h3>Étudiants</h3>
+          <ul>
+            <li><a href="https://isen-ouest.fr/infos-pratiques/">Informations pratiques</a></li>
+            <li><a href="http://isen-ouest.fr/sportifs">Sportifs</a></li>
+            <li><a href="http://isen-ouest.fr/alumni-aiisen">Alumni AIISEN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <!-- Bas de page -->
 </footer>
 <div class="footer-bottom">
-
-
-</body>
+  &copy; 2025 ISEN Ouest – Tous droits réservés.
+</div>
 </html>
