@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ISEN - Page avec Header et Footer</title>
+  <title>ISEN - Domaines professionnels</title>
   <style>
     html {
       font-family: 'Open Sans', sans-serif;
@@ -60,6 +60,60 @@
 
     .header-nav a:hover {
       text-decoration: underline;
+    }
+
+    /* ----------- DOMAINES PROFESSIONNELS ----------- */
+    .dp-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .dp-section h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #000;
+    }
+
+    .dp-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .dp-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      transition: transform 0.2s ease;
+      padding: 3px 3px 0;
+      position: relative;
+    }
+
+    .dp-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .dp-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .dp-card p {
+      padding: 1px 0.5em;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+      background-color: #05819d;
+      color: white;
+      display: inline;
+      position: absolute;
+      bottom: 1em;
+      left: 0;
     }
 
     /* ----------- FOOTER ----------- */
@@ -181,65 +235,41 @@
     </div>
   </header>
 
-  <!-- Contenu principal (optionnel) -->
-  <main style="min-height: 400px; padding: 40px 20px;">
-    <!-- Vous pouvez insérer ici le contenu principal de votre page -->
-  </main>
+  <!-- SECTION DOMAINES PROFESSIONNELS -->
+  <section class="dp-section">
+    <h2>Nos formations ingénieurs</h2>
+    <div class="dp-grid">
+      <div class="dp-card">
+        <a href="#"><img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Apprentissage"></a>
+      </div>
+      <div class="dp-card">
+        <a href="#"><img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Apprentissage"></a>
+      </div>
+      <div class="dp-card">
+        <a href="#"><img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="Apprentissage"></a>
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="site-footer">
-  <div class="footer-container">
-
-    <!-- Colonne 1 : Logo + bouton -->
-    <div class="footer-col footer-col-logo">
-      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" 
-           alt="ISEN Ouest" class="footer-logo">
-      <a href="https://bmuselle.github.io/TP-ISEN-OUEST-Pauline-BUISARD-Louise-POUGET-AMOURET-Baptiste-MUSELLEC/contact.html" class="btn-contact">Nous contacter</a>
-    </div>
-
-    <!-- Zone titres + colonnes 2-4 -->
-    <div class="footer-links-section">
-      <!-- Titre général -->
-      <p class="footer-cities">Brest - Caen - Nantes - Paris - Rennes</p>
-
-      <!-- Colonnes de liens -->
-      <div class="footer-links-container">
-        <!-- Colonne 2 : Devenir ingénieur -->
-        <div class="footer-col">
-          <h3>Devenir ingénieur</h3>
-          <ul>
-            <li><a href="https://bmuselle.github.io/TP-ISEN-OUEST-Pauline-BUISARD-Louise-POUGET-AMOURET-Baptiste-MUSELLEC/postbac.html">Cycle post-bac</a></li>
-            <li><a href="https://bmuselle.github.io/TP-ISEN-OUEST-Pauline-BUISARD-Louise-POUGET-AMOURET-Baptiste-MUSELLEC/devenir_inge.html">Formation d'ingénieur</a></li>
-            <li><a href="https://bmuselle.github.io/TP-ISEN-OUEST-Pauline-BUISARD-Louise-POUGET-AMOURET-Baptiste-MUSELLEC/apprentissage.html">Apprentissage</a></li>
-          </ul>
-        </div>
-
-        <!-- Colonne 3 : Entreprises -->
-        <div class="footer-col">
-          <h3>Entreprises</h3>
-          <ul>
-            <li><a href="https://isen-ouest.fr/entreprises/recruter/">Recruter un étudiant</a></li>
-            <li><a href="https://isen-ouest.fr/labisen-la-recherche/la-recherche-partenariale/">Recherche partenariale</a></li>
-            <li><a href="http://isen-ouest.fr/taxe-d-apprentissage">Taxe d'apprentissage</a></li>
-          </ul>
-        </div>
-
-        <!-- Colonne 4 : Étudiants -->
-        <div class="footer-col">
-          <h3>Étudiants</h3>
-          <ul>
-            <li><a href="https://isen-ouest.fr/infos-pratiques/">Informations pratiques</a></li>
-            <li><a href="http://isen-ouest.fr/sportifs">Sportifs</a></li>
-            <li><a href="http://isen-ouest.fr/alumni-aiisen">Alumni AIISEN</a></li>
-          </ul>
-        </div>
+    <div class="footer-container">
+      <!-- Colonne 1 : Logo + bouton -->
+      <div class="footer-col footer-col-logo">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" 
+             alt="ISEN Ouest" class="footer-logo">
+        <a href="https://bmuselle.github.io/TP-ISEN-OUEST-Pauline-BUISARD-Louise-POUGET-AMOURET-Baptiste-MUSELLEC/contact.html" class="btn-contact">Nous contacter</a>
       </div>
-    </div>
-  </div>
-</footer>
-<div class="footer-bottom">
-  &copy; 2025 ISEN Ouest – Tous droits réservés.
-</div>
 
-</body>
-</html>
+      <!-- Zone titres + colonnes 2-4 -->
+      <div class="footer-links-section">
+        <p class="footer-cities">Brest - Caen - Nantes - Paris - Rennes</p>
+
+        <div class="footer-links-container">
+          <!-- Colonne 2 -->
+          <div class="footer-col">
+            <h3>Devenir ingénieur</h3>
+            <ul>
+              <li><a href="https://bmuselle.github.io/TP-ISEN-OUEST-Pauline-BUISARD-Louise-POUGET-AMOURET-Baptiste-MUSELLEC/postbac.html">Cycle post-bac</a></li>
+              <li><a href="https://bmuselle.github.io/TP-ISEN-OUEST-Pauline-BUISARD-Louise-POUGET-AMOURET-Baptiste-MUSELLEC/devenir_inge.html">Formation d'ingénieur</a></li>
+              <li
